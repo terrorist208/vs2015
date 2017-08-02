@@ -118,18 +118,6 @@ BOOL CMFCApplication1Dlg::OnInitDialog()
 	set_system("tsp_height", 3000);
 	//结束*****************************************************
 
-	HTuple Width, Height;
-	Hobject image;
-	read_image(&image, "D:/435.jpg");
-	//获取图像大小
-	get_image_size(image, &Width, &Height);
-	//全图显示
-	set_part(m_hWindowHandle, 0, 0, Height - 1, Width - 1);
-	//清楚显示窗口
-	clear_window(m_hWindowHandle);
-	disp_obj(image, m_hWindowHandle);
-
-
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
 
