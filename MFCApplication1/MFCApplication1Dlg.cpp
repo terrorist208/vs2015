@@ -170,3 +170,7 @@ HCURSOR CMFCApplication1Dlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+void CMFCApplication1Dlg::OnBnClickedButton1()
+{
+	int a = 100;
+}
